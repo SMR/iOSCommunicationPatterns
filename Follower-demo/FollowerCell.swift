@@ -35,11 +35,27 @@ class FollowerCell: UITableViewCell {
     if let followButton = sender as? FollowButton {
 
         if followButton.followState == .isFollowing{
+            
+            // Closure
+            
+            
+            // Delegate
             delegate?.followButtonTapped(forUser: nameLabel.text!)
-//            followButton.followState = .isNotFollowing
+            
+            
+            // Direct Method Invocation
+            // followButton.followState = .isNotFollowing
         } else {
+            
+            // Closure
+            
+            
+            // Delegate
             delegate?.followButtonTapped(forUser: nameLabel.text!)
-//            followButton.followState = .isFollowing
+            
+            
+            // Direct Method Invocation
+            // followButton.followState = .isFollowing
         }
         
     }
